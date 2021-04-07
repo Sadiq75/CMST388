@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script src="js/image-gallery.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div class="row">
+		<div class="col-12">
+        		<h1>Cultures Around the World</h1>			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+           		<div id="thumbnails">
+
+<img src="img/aztec_culture.jpg" id="aztec" onclick="swap1();" width="19.375%" height="19.5%" alt=""/>
+
+<img src="img/fuji_culture.jpg" id="fuji" onclick="swap2();" width="19.375%" height="19.5%" alt="" />
+
+
+<img src="img/bunyoro_culture.jpg" id="bunyoro" onclick="swap3();" width="19.375%" height="19.5%" alt="" onmousedown="addBorder(this)" onmouseover="hoverImage(this);" onmouseout="backToNormal(this);"/>
+                		<img src="img/nepal_culture.jpg" id="nepal" onclick="swap4();" width="19.375%" height="19.5%" alt="" onmousedown="addBorder(this)" onmouseover="hoverImage(this);" onmouseout="backToNormal(this);"/>
+                		<img src="img/phillipine_culture.jpg" id="phillipine" onclick="swap5();" width="19.375%" height="19.5%" alt="" onmousedown="addBorder(this)" onmouseover="hoverImage(this);" onmouseout="backToNormal(this);"/> 
+
+    			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div id="mainImage">
+                		<img id="largeImage" src="img/aztec_culture.jpg" width="100%" height="100%" alt=""/>
+    			</div>
+			<form>
+				<label id="message">There are many unique cultures around the world</label>
+			</form>
+		</div>
+	</div>
+   	<div class="row">
+		<div class="col-12">
+			<div class="caption">
+               			<p id="caption"></p>
+    			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
